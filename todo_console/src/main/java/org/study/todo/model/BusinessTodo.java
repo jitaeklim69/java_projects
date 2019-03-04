@@ -37,9 +37,13 @@ public class BusinessTodo extends Todo {
 	@Override
 	public String toString() {
 		return "BusinessTodo [" 
-				+ super.toString()
-				+ ", doneDate=" + doneDate + ", orderName=" 
-				+ orderName + ", detailDesc=" + detailDesc
+				+ "Id: " + getId() 
+				+ ", Description: " + getDesc() + "\n" 
+				+ "\tCreateDate: " + getCreateDate() + "\n"
+				+ "\tdoneDate: " + getDoneDate() + "\n"
+				+ "\tisDone: " + isDone() 
+				+ ", orderName=" + orderName 
+				+ ", detailDesc=" + detailDesc
 				+ "]";
 	}
 

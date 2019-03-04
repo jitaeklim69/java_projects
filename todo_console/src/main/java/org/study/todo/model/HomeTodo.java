@@ -18,11 +18,12 @@ public class HomeTodo extends Todo {
 
 	@Override
 	public String toString() {
-		return "HomeTodo [" + "Description: " + getDesc() 
-				+ ", CreateDate: " + getCreateDate()
-				+ ", isDone: " + isDone() 
-				+ ", Id: " + getId() 
-				+ ", doneDate: " + getDoneDate() 
+		return "HomeTodo [" 
+				+ "Id: " + getId() 
+				+ ", Description: " + getDesc() + "\n" 
+				+ "\tCreateDate: " + getCreateDate() + "\n"
+				+ "\tdoneDate: " + getDoneDate() + "\n"
+				+ "\tisDone: " + isDone() 
 				+ "]";
 	}
 
