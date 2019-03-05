@@ -51,6 +51,8 @@ public abstract class Todo implements Comparable<Todo> {
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+	public abstract Date getDoneDate() ;
 
 	@Override
 	public String toString() {

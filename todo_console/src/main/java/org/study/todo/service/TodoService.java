@@ -8,7 +8,7 @@ public interface TodoService {
 
 	public int getUniqueId();
 	public void AddTodo(Todo todo);
-	public void removeTodo(int id);
+	public Todo removeTodo(int id);
 	// todoType이 Null이면 모든 일정
 	// "home" --> HomeTodos
 	// "business" --> BusinessTodos
