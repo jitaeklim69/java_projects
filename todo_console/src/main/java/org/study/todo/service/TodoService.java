@@ -1,5 +1,6 @@
 package org.study.todo.service;
 
+import java.io.DataOutputStream;
 import java.util.Date;
 
 import org.study.todo.model.Todo;
@@ -17,5 +18,7 @@ public interface TodoService {
 	public Todo[] searchTodo(String desc);
 	public Todo[] searchTodoByOrder(String orderName);
 	public boolean updateTodo(Todo todo);
+	
+	public boolean saveToFile(DataOutputStream out);
 	
 }

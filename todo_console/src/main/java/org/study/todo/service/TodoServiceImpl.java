@@ -1,5 +1,6 @@
 package org.study.todo.service;
 
+import java.io.DataOutputStream;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
@@ -127,7 +128,8 @@ public class TodoServiceImpl implements TodoService {
 		List<Todo> list = new ArrayList<> ();
 		
 		for (Todo todo : todoSet) {
-			if (todo.getDesc().equalsIgnoreCase(desc)) {
+			//if (todo.getDesc().equalsIgnoreCase(desc)) {
+			if (todo.getDesc().indexOf(desc) >= 0) {
 				list.add(todo);
 			}
 		}
@@ -183,6 +185,14 @@ public class TodoServiceImpl implements TodoService {
 		int id = id_seq;
 		id_seq++;
 		return id;
+	}
+
+	@Override
+	public boolean saveToFile(DataOutputStream out) {
+		
+		
+		
+		return false;
 	}
 
 }
